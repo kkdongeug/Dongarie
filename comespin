@@ -86,7 +86,13 @@ void loop()
   delay(1000);
   }
   
-  else
-  analogWrite(EN1,100);
   
+  else
+  {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  analogWrite(EN1,100);
   }
+}
+  
+  
