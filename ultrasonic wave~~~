@@ -1,0 +1,17 @@
+#include <NewPing.h>
+
+//sonar(TrigPin, EchoPin, MaxDistance);
+NewPing sonar(2, 3, 200);
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  delay(50);          
+  Serial.print("A Ping : ");
+  Serial.print(sonar[0].ping_cm());
+  Serial.println("cm");
+
+  delay(100);
+}
